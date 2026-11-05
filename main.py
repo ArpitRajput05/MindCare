@@ -1,5 +1,7 @@
 import os
 import warnings
+import webbrowser
+import threading
 warnings.filterwarnings('ignore', category=UserWarning)
 
 import joblib
@@ -89,6 +91,12 @@ def predict(data: StudentData):
     return PredictionResponse(predicted_mental_health_score=round(float(prediction), 2))
 
 
+def open_browser():
+    webbrowser.open("http://127.0.0.1:8000")
+
+
 if __name__ == '__main__':
     print("Starting Mental Health Score server at http://127.0.0.1:8000")
+    # Automatically open the web browser when the server starts
+    threading.Timer(1.5, open_browser).start()
     uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
