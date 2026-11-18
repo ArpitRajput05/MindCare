@@ -63,11 +63,13 @@ Simply double-click **`run.bat`** (or run `.\run.bat` in your terminal). It will
 
 ## 📡 API Endpoints
 
-- **`GET /`**: Serves the interactive web interface.
-- **`GET /docs`**: Interactive Swagger API documentation and testing playground.
-- **`POST /predict`**: Accepts student lifestyle features and returns the predicted mental health score (0–10).
+- **`GET /`**: Interactive frontend interface.
+- **`GET /health`**: Health status and model verification endpoint.
+- **`GET /metadata`**: Supported categorical platforms, countries, and feature parameters.
+- **`GET /docs`**: Interactive Swagger UI documentation.
+- **`POST /predict`**: Takes student lifestyle and academic features, returning a predicted mental health score (0–10).
 
-### Sample Request:
+### Sample Request Payload:
 ```json
 {
   "age": 21,
@@ -94,31 +96,8 @@ Simply double-click **`run.bat`** (or run `.\run.bat` in your terminal). It will
 
 ---
 
-## 📤 How to Push to Your Own GitHub Repository
+## 👨‍💻 Author & Contact
 
-Follow these 4 simple steps to upload this project to your GitHub:
-
-1. **Initialize Git**:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit: Mental Health Score ML application"
-   ```
-
-2. **Create a new repository on GitHub**:
-   - Go to [github.com/new](https://github.com/new).
-   - Name your repository (e.g., `mental-health-score`).
-   - Do **NOT** initialize with README or .gitignore (we already have them).
-   - Click **Create repository**.
-
-3. **Link to your GitHub repository**:
-   ```bash
-   git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
-   ```
-   *(Replace with your actual GitHub username and repository name)*
-
-4. **Push the code**:
-   ```bash
-   git push -u origin main
-   ```
+- **Developer:** [Arpit Rajput](https://github.com/ArpitRajput05)
+- **Email:** [arpitrajput.it@gmail.com](mailto:arpitrajput.it@gmail.com)
+- **Project Repository:** [MindCare on GitHub](https://github.com/ArpitRajput05/MindCare)

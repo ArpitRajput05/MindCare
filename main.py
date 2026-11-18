@@ -18,7 +18,11 @@ MODEL_PATH = os.path.join(BASE_DIR, 'Mental_Health_Model.pkl')
 model = joblib.load(MODEL_PATH)
 top_countries = ['Other', 'India', 'USA', 'Canada', 'Australia', 'UK', 'Germany', 'Mexico', 'Turkey', 'France']
 
-app = FastAPI(title="Student Mental Health Score API")
+app = FastAPI(
+    title="MindCare — Student Mental Health Prediction API",
+    description="Machine Learning REST API for predictive mental health scoring using Random Forest regression, behavioral features, and demographic analysis.",
+    version="1.1.0"
+)
 
 app.add_middleware(
     CORSMiddleware,
@@ -65,6 +69,29 @@ def serve_css():
 @app.get('/script.js')
 def serve_js():
     return FileResponse(os.path.join(BASE_DIR, 'script.js'), media_type='application/javascript')
+
+
+@app.get('/health', tags=["Health"])
+def health_check():
+    """System health check endpoint for monitoring and uptime verification."""
+    return {
+        "status": "healthy",
+        "service": "MindCare API",
+        "model_loaded": model is not None,
+        "version": "1.1.0"
+    }
+
+
+@app.get('/metadata', tags=["Metadata"])
+def get_metadata():
+    """Retrieve supported categorical values, feature constraints, and score scale."""
+    return {
+        "supported_platforms": ['Facebook', 'LinkedIn', 'Instagram', 'Snapchat', 'Twitter', 'YouTube', 'TikTok', 'LINE', 'KakaoTalk', 'VKontakte', 'WhatsApp', 'WeChat'],
+        "top_countries": top_countries,
+        "stress_levels": ['Low', 'Medium', 'High', 'Very High'],
+        "academic_levels": ['High School', 'Undergraduate', 'Graduate'],
+        "score_range": {"min": 0.0, "max": 10.0}
+    }
 
 
 @app.post('/predict', response_model=PredictionResponse)
