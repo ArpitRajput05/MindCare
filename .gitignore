@@ -1,4 +1,4 @@
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
@@ -10,14 +10,41 @@ __pycache__/
 venv/
 ENV/
 env/
+ENV*/
 
-# IDE & Editor files
+# Jupyter Notebook & Data Science Checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+
+# IDEs & Text Editors
 .vscode/
 .idea/
+*.sublime-project
+*.sublime-workspace
 *.swp
 *.swo
 
-# Operating System files
+# Distribution / Packaging
+build/
+dist/
+*.egg-info/
+*.whl
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs & Temporary Files
+*.log
+.cache/
+
+# OS-specific files
 Thumbs.db
 Desktop.ini
 .DS_Store
