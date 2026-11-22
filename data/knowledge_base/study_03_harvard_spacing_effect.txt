@@ -1,0 +1,9 @@
+Title: Harvard Insights on Spaced Repetition and Long-Term Memory
+Source: Harvard Derek Bok Center for Teaching and Learning
+Category: Study Habits
+
+The spacing effect demonstrates that learning is significantly more durable when study sessions are distributed across days rather than condensed into marathon sessions.
+Cramming for 10 hours before an exam yields rapid forgetting within 48 hours, whereas 2 hours across five separate days fosters deep conceptual scaffolding.
+Intersperse different related subjects during study sessions (interleaving practice) rather than drilling a single topic endlessly; this trains pattern recognition.
+Use flashcards or digital spaced-repetition algorithms that schedule reviews right at the moment when memories are about to fade.
+Treat rest days not as wasted time, but as the essential biological phase where memory consolidation is actively wired during slow-wave sleep.

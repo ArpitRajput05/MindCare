@@ -1,0 +1,9 @@
+Title: Harvard Medical School Guide to Healthy Sleep Hygiene
+Source: Harvard Health Publishing - Division of Sleep Medicine
+Category: Sleep
+
+Sleep hygiene is a collection of environmental and behavioral practices that facilitate sustained nocturnal rest.
+The sleep sanctuary must be kept cool (around 18-20°C or 65-68°F), dark, and quiet to prevent micro-arousals during deep NREM slow-wave sleep.
+Caffeine has an average half-life of 5 to 7 hours and a quarter-life of up to 12 hours; caffeine consumption should cease at least 8 hours prior to anticipated bedtime.
+The human brain associates the bed with wakefulness if spent studying or watching entertainment in bed; if unable to sleep after 20 minutes, leave the bedroom and engage in low-stimulus reading until drowsiness returns.
+A 15-minute wind-down buffer before sleep, including warm showers or progressive muscle relaxation, reduces sympathetic nervous system tone and accelerates sleep latency.

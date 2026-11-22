@@ -1,0 +1,9 @@
+Title: NIH Guidance on Managing Academic Sleep Debt
+Source: National Institutes of Health (NIH) - National Heart, Lung, and Blood Institute
+Category: Sleep
+
+Sleep debt accumulates chronically when a student sleeps less than their biological baseline for multiple consecutive nights.
+Accumulated sleep deficits severely impair executive brain functions: risk assessment, abstract logic, working memory, and sustained attention during lectures.
+Attempting to pay off chronic sleep debt solely through weekend binge-sleeping (sleeping past noon) induces social jetlag, making Sunday night sleep onset even harder.
+The optimal strategy for repaying acute sleep debt is gradual: sleep 30 to 60 minutes earlier over 4 to 5 consecutive evenings, paired with afternoon power naps strictly under 25 minutes.
+Short power naps taken before 3:00 PM restore cognitive alertness without plunging the brain into deep slow-wave sleep, preventing post-nap grogginess.

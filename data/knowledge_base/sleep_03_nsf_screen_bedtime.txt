@@ -1,0 +1,9 @@
+Title: National Sleep Foundation Protocol on Blue Light and Bedtime Technology
+Source: National Sleep Foundation (NSF) Clinical Report
+Category: Sleep
+
+Short-wavelength blue light emitted by smartphones, laptops, and tablets suppresses nocturnal melatonin secretion by over 50 percent when used within two hours of bedtime.
+Beyond optical stimulation, interactive digital content such as social media feeds and notifications triggers dopamine surges and hyper-arousal, delaying the onset of restorative REM sleep.
+Implement a strict digital curfew by turning off personal handheld devices at least 60 minutes before scheduled lights-out.
+Replace screen time with analog activities: physical reading, reflective journaling, or soothing ambient music.
+Charge smartphones outside the sleeping area to eliminate midnight notification checks, micro-awakenings, and involuntary screen glance compulsions.
