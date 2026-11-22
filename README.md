@@ -7,7 +7,7 @@
 [![ChromaDB](https://img.shields.io/badge/Vector--DB-ChromaDB-FF6F00)](https://www.trychroma.com/)
 [![Gemini](https://img.shields.io/badge/GenAI-Google%20Gemini%20%7C%20Groq-4285F4?logo=google&logoColor=white)](https://aistudio.google.com/)
 [![Tests](https://img.shields.io/badge/Tests-16%20Passed%20(100%25)-success?logo=pytest&logoColor=white)](https://docs.pytest.org/)
-[![Docker](https://img.shields.io/badge/Deployment-Docker%20%7C%20Render%20%7C%20HF-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
+[![RAG](https://img.shields.io/badge/Architecture-RAG%20%2B%20GenAI-teal)](https://github.com/ArpitRajput05/MindCare)
 
 **MindCare Signal** transforms student mental health analytics from static black-box predictions into a **closed-loop, explainable, and clinically grounded GenAI self-care intelligence system**.
 
@@ -172,12 +172,10 @@ MindCare/
 │   └── test_api.py                # End-to-end integration tests for FastAPI endpoints
 ├── .env.example                    # Environment variable template
 ├── .env                            # Local configuration (API keys)
-├── Dockerfile                      # Production container image
-├── docker-compose.yml              # 1-command container orchestration
 ├── Mental_Health_Model.pkl          # Trained Random Forest pipeline
 ├── requirements.txt                # Pinned production dependencies
 ├── run.bat                         # 1-click Windows launcher
-└── README.md                       # Documentation & deployment guide
+└── README.md                       # Comprehensive documentation & setup guide
 ```
 
 ---
@@ -230,25 +228,6 @@ Double-click **`run.bat`** (or execute `.\run.bat` in your terminal). It will in
 5. **Visit the app**:
    - Web Application: [http://127.0.0.1:8000](http://127.0.0.1:8000)
    - Interactive Swagger API: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
-
----
-
-## 🐳 Docker Deployment
-
-Run the entire application in a standardized container with zero local environment setup:
-
-```bash
-# Build and run with Docker Compose
-docker compose up -d --build
-
-# View container logs
-docker compose logs -f
-
-# Stop container
-docker compose down
-```
-
-Visit [http://localhost:8000](http://localhost:8000).
 
 ---
 
@@ -316,22 +295,6 @@ curl -X POST "http://127.0.0.1:8000/generate-plan" \
        }
      }'
 ```
-
----
-
-## 🚀 Live Cloud Deployment
-
-### 1. Hugging Face Spaces (Docker Space)
-1. Create a new Space on [Hugging Face Spaces](https://huggingface.co/spaces) and choose the **Docker** SDK.
-2. Push this repository to your Space repository.
-3. In Space Settings -> **Variables and Secrets**, add `GEMINI_API_KEY` (optional).
-4. The Space will build and deploy automatically.
-
-### 2. Render / Railway
-1. Connect your GitHub repository to [Render](https://render.com/).
-2. Select **Web Service**, environment **Docker**.
-3. Set the Health Check Path to `/health`.
-4. Add environment variable `GEMINI_API_KEY`.
 
 ---
 
